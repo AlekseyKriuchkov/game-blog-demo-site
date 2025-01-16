@@ -1,0 +1,31 @@
+@import '../../styles/mixin';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-background);
+}
+
+.section > * {
+  margin: 25px 0;
+  letter-spacing: 1px;
+  line-height: 1.5
+}
+
+.section {
+  h1 {
+    @include heading-text;
+  }
+
+  h2 {
+    @include large-text;
+  }
+
+  h3 {
+    @include medium-text;
+  }
+
+  p {
+    @include default-text;
+  }
+}

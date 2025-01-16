@@ -1,0 +1,36 @@
+@import '../styles/mixin';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section {
+    h1 {
+        @include heading-text;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    p {
+        @include default-text;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 30vw;
+    margin: 40px 0;
+    background: var(--main-gradient);
+}

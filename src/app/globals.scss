@@ -1,0 +1,17 @@
+@import "../styles/mixin.scss";
+@import "../styles/reset.scss";
+
+:root {
+  --main-background: #131d5f;
+  --light-blue-background: #00ddff;
+  --text-color: #FFFFFF;
+  --main-gradient: linear-gradient(#00ddff, #131d5f);
+}
+
+body {
+  color: var(--text-color);
+  background: var(--main-background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+

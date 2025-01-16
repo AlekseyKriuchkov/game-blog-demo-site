@@ -1,0 +1,45 @@
+@mixin default-text {
+  font: {
+    size:  14px;
+    weight: 400;
+  };
+}
+
+@mixin heading-text {
+  font: {
+    size:  32px;
+    weight: 700;
+  };
+}
+
+@mixin large-text {
+  font: {
+    size:  20px;
+    weight: 600;
+  };
+}
+
+@mixin medium-text {
+  font: {
+    size:  16px;
+    weight: 600;
+  };
+}
+
+//@mixin largeMobile {
+//  @media screen and (min-width: #{$largeMobile}) {
+//    @content;
+//  }
+//}
+//
+//
+//$largeDesktop: 1440px;
+//$smallDesktop: 1204px;
+//$laptop: 960px;
+//$tablet: 640px;
+//$largeMobile: 480px;
+
+
+//@include largeMobile {
+//  padding: 50px 20px;
+//}

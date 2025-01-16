@@ -1,0 +1,20 @@
+.blogsWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 15px;
+}
+
+.blog {
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--light-blue-background);
+  border-radius: 10px;
+  padding: 30px 50px;
+  box-sizing: content-box;
+}
+
+.blog:hover {
+  background-color: var(--light-blue-background);
+  color: #0a0a0a;
+}
