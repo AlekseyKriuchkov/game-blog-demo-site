@@ -1,7 +1,6 @@
-@import '../../../styles/mixin';
+@import '@/styles/mixin';
 
 .section > * {
-  max-width: 1000px;
   margin-top: 20px;
   letter-spacing: 1px;
   line-height: 1.5

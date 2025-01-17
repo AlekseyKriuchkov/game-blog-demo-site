@@ -1,5 +1,5 @@
 import {FC, JSX} from 'react';
-import styles from '@/components/modal/styles.module.scss'
+import styles from '@/shared/modal/styles.module.scss'
 
 type Props = {
   children?: JSX.Element

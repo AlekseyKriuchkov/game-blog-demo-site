@@ -1,22 +1,11 @@
-import React, {FC} from 'react';
-import {BLOG_ARTICLES, BlogSlug} from "@/constants/blogs-content";
-import style from './styles.module.scss'
+import {Article} from "@/components/article/article";
 
 type Props = {
   params: {
     slug: string
   }
 }
-const ArticlePage: FC<Props> = ({params}) => {
-  const {slug} = params
-  const article = BLOG_ARTICLES[slug as BlogSlug]
 
-  return (
-    <section className={style.section}>
-      <h1>{article.title}</h1>
-      {article.content}
-    </section>
-  );
+export default async function ArticlePage ({params}: Props)  {
+  return <Article params={params} />
 };
-
-export default ArticlePage;

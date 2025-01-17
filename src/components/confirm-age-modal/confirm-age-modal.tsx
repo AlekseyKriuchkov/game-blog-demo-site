@@ -2,7 +2,7 @@
 
 import React, {useEffect, useState} from 'react';
 import {localStorageGet, LocalStorageKeys, localStorageSet} from "@/utils/local-storage";
-import {Modal} from "@/components/modal/modal";
+import {Modal} from "@/shared/modal/modal";
 import {ConfirmAgeModalContent} from "@/components/confirm-age-modal-content/confirm-age-modal-content";
 import {useRouter} from "next/navigation";
 import {useAgeConfirmation} from "@/shared/contexts/age-confirm-provider";

@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import style from "./styles.module.scss";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import Icon from "@/assets/18.svg";
 import BurgerMenu from "@/assets/burger-menu.svg";
 import cn from 'classnames'
 import {localStorageGet, LocalStorageKeys} from "@/utils/local-storage";
-import {LinksEnum} from "@/constants/enum";
+import {Links} from "@/constants/enum";
 import {useAgeConfirmation} from "@/shared/contexts/age-confirm-provider";
 
 export const Navigation = () => {
@@ -17,10 +17,10 @@ export const Navigation = () => {
   const { isAgeConfirmed } = useAgeConfirmation()
 
   const links = [
-    { href: LinksEnum.HOME, text: "HOME" },
-    { href: LinksEnum.PRIVACY_POLICY, text: "PRIVACY" },
-    { href: LinksEnum.TERMS_AND_CONDITIONS, text: "TERMS" },
-    { href: LinksEnum.BLOGS, text: "BLOGS" },
+    { href: Links.HOME, text: "HOME" },
+    { href: Links.PRIVACY_POLICY, text: "PRIVACY POLICY" },
+    { href: Links.TERMS_AND_CONDITIONS, text: "TERMS AND CONDITIONS" },
+    { href: Links.BLOGS, text: "BLOGS" },
   ]
 
   useEffect(() => {
